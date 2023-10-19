@@ -12,4 +12,8 @@ describe("leapYears", () => {
   it("returns false for numbers not divisible by 400", () => {
     expect(leapYears(700)).toBe(false);
   });
+
+  it("returns true for years divisible by 4 but not by 100", () => {
+    expect(leapYears(16)).toBe(true);
+  });
 });
